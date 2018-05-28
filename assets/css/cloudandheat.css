@@ -1,0 +1,26 @@
+/* Remove image borders */
+.reveal section img {
+	border: 0;
+	box-shadow: none;
+}
+
+/* Small text */
+.reveal section span.small {
+	font-size: 0.8em;
+}
+
+/* Adjust logo size */
+#gp-logo img {
+	max-height: 1.5em;
+}
+
+/* Column support for slides */
+.reveal div.columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Set width for two columns */
+.reveal div.columns div {
+	width: 50%;
+}
