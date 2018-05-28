@@ -1,0 +1,6 @@
+theme: white
+theme-override: assets/css/cloudandheat.css
+logo: assets/images/logo.png
+logo-position: bottom-right
+remote-control: true
+published: false
