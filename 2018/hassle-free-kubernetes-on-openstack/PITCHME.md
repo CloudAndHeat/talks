@@ -60,7 +60,7 @@ Note:
 ## Kubernetes High Level Architecture
 
 - An orchestrator of contenarized applications
-- Two typeS of linux hosts
+- Two types of linux hosts
 - One or more Masters : brain & memory
 - A bunch of Nodes : muscles - where the pods are actually deployed
 
@@ -138,11 +138,12 @@ Note:
 ## Major components - ReplicaSets
 
 - Take a Pod template and deploy a desired number of *replicas* of it
-- Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
-- Add self-healing, roll-backs, and scalability possibilities
+- Instantiate background reconciliation loops
+- Add self-healing, and scalability possibilities
 
 Note:
 
+- Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
 - Specify a Pod template + a number of desired replicas in the manifest file
 
 ---
