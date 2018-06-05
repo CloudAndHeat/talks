@@ -1,3 +1,5 @@
+---?image=assets/images/bg.png&position=bottom -140% right -55%&size=70%
+
 # Hassle-free Kubernetes on OpenStack
 
 ---

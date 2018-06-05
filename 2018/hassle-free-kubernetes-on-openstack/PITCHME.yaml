@@ -1,6 +1,7 @@
 theme: white
 theme-override: assets/css/cloudandheat.css
 logo: assets/images/logo.png
-logo-position: bottom-right
+logo-position: top-right
 remote-control: true
-published: false
+published: true
+layout: top-left
