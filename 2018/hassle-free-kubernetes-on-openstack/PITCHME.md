@@ -47,7 +47,6 @@ Note:
 - Scripts: configuration management system
 - Maintain: Install updates / security fixes
 
-
 ---
 
 ## The Kubernetes (k8s) Project
@@ -58,30 +57,31 @@ Note:
 
 ---
 
-## Kubernetes Architecture
+## Kubernetes High Level Architecture
 
+- An orchestrator of contenarized applications
+- Two typeS of linux hosts
+- One or more Masters : brain & memory
+- A bunch of Nodes : muscles - where the pods are actually deployed
 
 Note:
 
 - Masters & Nodes (Minions)
-- Masters : brain & memory
-- Nodes : muscles - where the pods are actually deployed
-#- Main services running on the Master : Kube-controller-manager, kube-apiserver, cluster store
-#- Main services running on the Minions : kubelet
-- >etcd<
+- Masters decide on which node to schedule application services on; monitor the cluster; implement changes; respond to events
+- Nodes are where the application services run; report back to the masters; watch for changes.
+- Masters and Nodes can be are metal servers or VMs (in Openstack of course)
 
 ---
 
 ## Kubernetes principles
 
-- Declarative model & desired state
 - Manifest file written in JSON or YAML
-- k8s uses the *declarative model*, as opposition to the *imperative model*
-+Example of manifest file
+- *Declarative model*, as opposition to the *imperative model*
+- Current state vs desired state comparison
 
 Note:
 
-1. Manifest files tell k8s how we want our application to look -> Desired state
+1. Manifest files tell k8s how we want our application to look -> Describe the desired state
 2. POST it to the k8s API server
 3. k8s records the configuration in the *cluster store*
 4. k8s deploys the app on the Nodes :
@@ -90,6 +90,29 @@ Note:
 	Building networks
 5. k8s implements a *watch loop* (or *background reconciliation loop*) that constantly monitors the state of the cluster
 6. If the *current state* of the cluster differs from the *desired state*, k8s uses the manifest files to fix it.
+
+---
+
+## Manifest file in YAML
+
+```
+apiVersion: apps/v1beta1
+kind: ReplicaSet
+metadata:
+  name: web-rs
+spec:
+  replicas: 10
+  template:
+    metadata:
+      labels:
+        app: nginx-app
+    spec:
+      containers:
+      - name: nginx-ctr
+        image: nginx
+        port:
+        - containerPort: 8080
+```
 
 ---
 
@@ -129,7 +152,7 @@ Note:
 - Provide a reliable networking endpoint for a set of Pods
 - Provide stable DNS, IP addresses, and support TCP and UDP
 - Perform simple randomized load-balancing across Pods
-- Automatically update itself when Pods come and go.
+- Automatically updates itself when Pods come and go
 
 Note:
 
@@ -147,10 +170,14 @@ Note:
 ---
 
 ## Benefits - But why are we actually doing all of this ?
+## k8s FTW
 
+- Self-healing
+- Scalability
+- Version Control
+- Basic Load-Balancing
 
 Note:
-
 - Example of an application ran with Docker / with K8s ?
 - Self-healing
 - Scalability
@@ -165,17 +192,25 @@ takes care of availability
 
 ---
 
-### Kubernetes over Openstack
+## Kubernetes over Openstack
+
+- Openstack, an Open Source software for building Public and Private Clouds
+- A collection of service for Compute, Network, Storage resources, and more
+- Openstack Magnum for the automated deployment of k8s clusters
+- Creation of Cluster templates
+- Creation of multiple clusters, based on those templates.
+- No manual installation of Kubernetes required !
 
 Note:
 - What is Openstack ? Cloud platform / sofware
-#- Openstack Heat to deploy templates on Openstack
+- Openstack Heat to deploy templates on Openstack
 - Openstack Magnum using Openstack Heat to deploy k8s clusters on Openstack
 - customer needs
+- Production setup : 3 k8s Master nodes, running on different nodes.
 
 ---
 
-### Books & pieces of documentations
+## Books & pieces of documentations
 
 - The Kubernetes Book by Nigel Poulton
 - PWK : https://labs.play-with-k8s.com/
