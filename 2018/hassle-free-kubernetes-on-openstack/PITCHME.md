@@ -138,6 +138,14 @@ Note:
 
 ---
 
+## Major components - Pods
+
+<div>
+	<img src="Pod.jpg">
+</div>
+
+---
+
 ## Major components - ReplicaSets
 
 - Take a Pod template and deploy a desired number of *replicas* of it
