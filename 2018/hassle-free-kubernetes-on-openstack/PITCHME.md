@@ -140,9 +140,7 @@ Note:
 
 ## Major components - Pods
 
-<div>
-	<img src="talks/2018/hassle-free-kubernetes-on-openstack/Pod.jpg">
-</div>
+---?image=talks/2018/hassle-free-kubernetes-on-openstack/Pod.jpg
 
 ---
 
