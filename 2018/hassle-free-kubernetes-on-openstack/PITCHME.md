@@ -61,17 +61,18 @@ Note:
 
 ## Kubernetes High Level Architecture
 
-- An orchestrator of contenarized applications
+- An orchestrator of containarized applications
 - Two types of linux hosts
 - One or more Masters : brain & memory
 - A bunch of Nodes : muscles - where the pods are actually deployed
 
 Note:
 
+- containerized applications : for example docker
 - Masters & Nodes (Minions)
 - Masters decide on which node to schedule application services on; monitor the cluster; implement changes; respond to events
 - Nodes are where the application services run; report back to the masters; watch for changes.
-- Masters and Nodes can be are metal servers or VMs (in Openstack of course)
+- Masters and Nodes can be bare metal servers or VMs (in Openstack of course)
 
 ---
 
@@ -198,7 +199,7 @@ takes care of availability
 ## Kubernetes over Openstack
 
 - Openstack, an Open Source software for building Public and Private Clouds
-- A collection of service for Compute, Network, Storage resources, and more
+- A collection of services for Compute, Network, Storage resources, and more
 - Openstack Magnum for the automated deployment of k8s clusters
 - Creation of Cluster templates
 - Creation of multiple clusters, based on those templates.
