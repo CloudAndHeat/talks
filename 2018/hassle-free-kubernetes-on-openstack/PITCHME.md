@@ -156,11 +156,15 @@ Note:
 
 ---
 
-## Major components - Pods
+## Major components - Pods antomy
 
 ![Pods](2018/hassle-free-kubernetes-on-openstack/img/Pod.png)
-- TEST1
-- test2
+
+---
+
+## Major components - Scaling Pods
+
+![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
 
 ---
 
@@ -174,6 +178,24 @@ Note:
 
 - Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
 - Specify a Pod template + a number of desired replicas in the manifest file
+
+---
+
+## Major components - Watch Loop
+
+![WatchLoop](2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png)
+
+---
+
+## Major components - Self Healing
+
+![WatchLoopSelfHealing](2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png)
+
+---
+
+## Major components - Scaling
+
+![WatchLoopScaling](2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png)
 
 ---
 
@@ -192,10 +214,40 @@ Note:
 
 ---
 
+## Major components - Services
+
+![Service1](2018/hassle-free-kubernetes-on-openstack/img/Service.png)
+
+---
+
+## Major components - Services
+
+![Service2](2018/hassle-free-kubernetes-on-openstack/img/Service2.png)
+
+---
+
 ## Major components - Deployments
 
 - Come on top of ReplicaSets, manage their lifecycle
 - Add rolling updates and simple rollbacks
+
+---
+
+## Real world use case - Rolling Updates
+
+![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
+
+---
+
+## Real world use case - Rolling Updates
+
+![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
+
+---
+
+## Real world use case - Rolling Updates
+
+![RollingUpdate3](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png)
 
 ---
 
