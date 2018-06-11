@@ -181,7 +181,20 @@ Note:
 
 ---
 
-## Major components - Watch Loop
+## ReplicaSets Watch Loop
+
++++
+![WatchLoop](2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png)
+<!-- .slide: data-background-transition="none" -->
+![WatchLoopSelfHealing](2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png)
+<!-- .slide: data-background-transition="none" -->
+![WatchLoopScaling](2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png)
+<!-- .slide: data-background-transition="none" -->
+
+---
+
+
+
 
 ![WatchLoop](2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png)
 
@@ -232,6 +245,9 @@ Note:
 - Add rolling updates and simple rollbacks
 
 ---
+
+
+
 
 ## Real world use case - Rolling Updates
 
