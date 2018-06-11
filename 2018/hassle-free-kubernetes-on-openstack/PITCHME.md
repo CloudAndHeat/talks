@@ -51,6 +51,24 @@ Note:
 
 ---
 
+![Tasks](2018/hassle-free-kubernetes-on-openstack/img/tasks.png)
+
+Note:
+
+- Example: deploy tasks of a basic website
+- done with Ansible (YAML files)
+- took around two days
+
+---
+
+![Workflow](2018/hassle-free-kubernetes-on-openstack/img/workflow.png)
+
+Note:
+
+- Deploy software: Automated tasks (Asnible)
+
+---
+
 ## The Kubernetes (k8s) Project
 
 - Originally developed by Google, open-source since 2014
