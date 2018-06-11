@@ -158,7 +158,7 @@ Note:
 
 ## Major components - Pods
 
-<div style="text-align:center"><img src ="img/Pod.png" /></div>
+<div style="text-align:center"><img src="2018/hassle-free-kubernetes-on-openstack/img/Pod.png" /></div>
 
 ---
 
