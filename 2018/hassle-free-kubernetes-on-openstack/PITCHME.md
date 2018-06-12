@@ -181,7 +181,7 @@ Note:
 
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=90% 80%&size=auto auto
-## Main components - ReplicaSets
+## ReplicaSets Watch Loop
 <div class="columns">
 	<div>
 - Take a Pod template and deploy a desired number of *replicas* of it
