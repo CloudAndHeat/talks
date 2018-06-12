@@ -288,6 +288,11 @@ Note:
 - One single command to perform a Rollback
 	</div>
 </div>
+
+Note:
+- titi
+- tata
+
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
