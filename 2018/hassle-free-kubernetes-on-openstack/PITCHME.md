@@ -281,11 +281,11 @@ Note:
 	<div>
 	</div>
 	<div>
-- **Deployment** creates a new **ReplicaSet** for the next revision
-- **Pods** are deleted one by one on the old **ReplicaSet**
-- New **Pods** with the new version of the application are created on the new **ReplicaSet**
+- *Deployment* creates a new *ReplicaSet* for the next revision
+- *Pods* are deleted one by one on the old *ReplicaSet*
+- New *Pods* with the new version of the application are created on the new *ReplicaSet*
 - Additional parameters can be set :
-  - Minimum number of **Pods** available
+  - Minimum number of *Pods* available
   - Amount of time to wait between to iteration
 - One single command to perform a Rolling Update
 - One single command to perform a Rollback
