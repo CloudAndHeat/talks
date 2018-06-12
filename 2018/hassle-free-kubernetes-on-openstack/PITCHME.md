@@ -288,30 +288,21 @@ Note:
 - One single command to perform a Rollback
 	</div>
 </div>
-
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
-
-Note:
-- *Deployment* creates a new *ReplicaSet* for the next revision
-- *Pods* are deleted one by one on the old *ReplicaSet*
-- New *Pods* with the new version of the application are created on the new *ReplicaSet*
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png&position=10% 80%&size=auto auto
 
 ## Rolling Updates
 <div class="columns">
 	<div>
+- *Deployment* creates a new *ReplicaSet* for the next revision
+- *Pods* are deleted one by one on the old *ReplicaSet*
+- New *Pods* with the new version of the application are created on the new *ReplicaSet*
 	</div>
 	<div>
 	</div>
 </div>
-
-Note:
-- *Deployment* creates a new *ReplicaSet* for the next revision
-- *Pods* are deleted one by one on the old *ReplicaSet*
-- New *Pods* with the new version of the application are created on the new *ReplicaSet*
-
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
@@ -324,12 +315,6 @@ Note:
 	<div>
 	</div>
 </div>
-
-Note:
-- *Deployment* creates a new *ReplicaSet* for the next revision
-- *Pods* are deleted one by one on the old *ReplicaSet*
-- New *Pods* with the new version of the application are created on the new *ReplicaSet*
-
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
