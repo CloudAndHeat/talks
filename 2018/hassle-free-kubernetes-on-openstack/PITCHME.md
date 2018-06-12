@@ -216,6 +216,9 @@ Note:
 - Add self-healing, and scalability possibilities
 	</div>
 	<div>
+- Take a Pod template and deploy a desired number of *replicas* of it
+- Instantiate background reconciliation loops
+- Add self-healing, and scalability possibilities
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
