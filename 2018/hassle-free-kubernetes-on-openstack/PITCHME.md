@@ -184,11 +184,10 @@ Note:
 
 ## ReplicaSets Watch Loop
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=top 10%&size=auto auto
-<!-- .slide: data-background-transition="fade" -->
+<!-- .slide: data-background-transition="none" -->
 ## ReplicaSets Watch Loop
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=top 15%&size=auto auto
 <!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 ## ReplicaSets Watch Loop
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=top 20%&size=auto auto
 <!-- .slide: data-background-transition="none" -->
