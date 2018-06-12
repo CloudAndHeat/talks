@@ -142,11 +142,11 @@ spec:
 <!-- .slide: data-transition="fade" -->
 
 <div class="columns">
-	<div>
+	<p>
 - Toto
 - Tata
 - The atomic unit of deployment
-	</div>
+	</p>
 	<div>
 	</div>
 </div>
