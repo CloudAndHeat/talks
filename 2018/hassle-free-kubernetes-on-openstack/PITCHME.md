@@ -143,6 +143,8 @@ spec:
 
 <div class="columns">
 	<div>
+- Toto
+- Tata
 - The atomic unit of deployment
 	</div>
 	<div>
@@ -162,7 +164,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
-## Major components - Pods antomy
+## Major components - Pods
 
 <div class="columns">
 	<div>
@@ -177,7 +179,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
-## Major components - Scaling Pods
+## Major components - Pods
 
 <div class="columns">
 	<div>
