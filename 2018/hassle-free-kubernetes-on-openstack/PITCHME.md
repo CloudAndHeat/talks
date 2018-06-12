@@ -221,23 +221,6 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
----?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=50% 80%&size=auto auto
-## ReplicaSets Watch Loop
-- toto
-- tata
-- titi
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=50% 80%&size=auto auto
-## ReplicaSets Self-Healing
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
-
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=50% 80%&size=auto auto
-## ReplicaSets Scaling
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
-
 ---
 
 ## Major components - Services
@@ -253,17 +236,13 @@ Note:
 - A Service gets its own **stable** IP address, DNS name, and port
 - It **dynamically** get associated with a set of Pod using *labels*
 
----
+---?image=2018/hassle-free-kubernetes-on-openstack/img/Service.png&size=auto auto
 
 ## Major components - Services
 
-![Service1](2018/hassle-free-kubernetes-on-openstack/img/Service.png)
-
----
+---?image=2018/hassle-free-kubernetes-on-openstack/img/Service2.png&size=auto auto
 
 ## Major components - Services
-
-![Service2](2018/hassle-free-kubernetes-on-openstack/img/Service2.png)
 
 ---
 
