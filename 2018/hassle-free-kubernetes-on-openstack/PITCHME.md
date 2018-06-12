@@ -179,17 +179,29 @@ Note:
 - Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
 - Specify a Pod template + a number of desired replicas in the manifest file
 
+
 ---
 
 ## ReplicaSets Watch Loop
++++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png
+<!-- .slide: data-background-transition="fade" -->
++++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png
+<!-- .slide: data-background-transition="fade" -->
++++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png
+<!-- .slide: data-background-transition="fade" -->
 
-+++
+
+---
+
+## ReplicaSets Watch Loop
 ![WatchLoop](2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png){:height="36px"}
 <!-- .slide: data-transition="fade" -->
 +++
+## ReplicaSets Watch Loop
 ![WatchLoopSelfHealing](2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png){:height="36px" width:"36px"}
 <!-- .slide: data-transition="fade" -->
 +++
+## ReplicaSets Watch Loop
 ![WatchLoopScaling](2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png =36x)
 <!-- .slide: data-transition="fade" -->
 
