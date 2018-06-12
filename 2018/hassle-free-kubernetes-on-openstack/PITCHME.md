@@ -158,7 +158,7 @@ Note:
 - You do not scale by adding more of the same container to an existing Pod, but by adding more copy of your Pod.
 - Pods are mortal. If they die unexpectedly, we don't bother trying to bring them back to life. We just start a fresh new Pod (new ID, new IP address)
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/Pod.png&position=90% 80%&size=auto auto
++++?image=2018/hassle-free-kubernetes-on-openstack/img/Pod.png&position=90% 120%&size=auto auto
 
 ## Major components - Pods
 
@@ -173,7 +173,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/Scaling.png&position=90% 80%&size=auto auto
++++?image=2018/hassle-free-kubernetes-on-openstack/img/Scaling.png&position=90% 120%&size=auto auto
 
 ## Major components - Pods
 
