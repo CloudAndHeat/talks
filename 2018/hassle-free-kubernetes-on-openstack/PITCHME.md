@@ -180,16 +180,14 @@ Note:
 - Specify a Pod template + a number of desired replicas in the manifest file
 
 
----
-
+---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=50% 80%&size=auto auto
 ## ReplicaSets Watch Loop
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=50% 60%&size=auto auto
 <!-- .slide: data-background-transition="none" -->
++++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=50% 80%&size=auto auto
 ## ReplicaSets Watch Loop
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=50% 70%&size=auto auto
 <!-- .slide: data-background-transition="none" -->
-## ReplicaSets Watch Loop
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=50% 80%&size=auto auto
+## ReplicaSets Watch Loop
 <!-- .slide: data-background-transition="none" -->
 
 
