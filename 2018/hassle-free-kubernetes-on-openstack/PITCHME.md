@@ -180,40 +180,37 @@ Note:
 - Specify a Pod template + a number of desired replicas in the manifest file
 
 
----?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=90% 80%&size=auto auto
+---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=10% 80%&size=auto auto
 ## ReplicaSets Watch Loop
 <div class="columns">
 	<div>
-- Take a Pod template and deploy a desired number of *replicas* of it
-- Instantiate background reconciliation loops
 	</div>
 	<div>
+- Take a Pod template and deploy a desired number of *replicas* of it
+- Instantiate background reconciliation loops
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=90% 80%&size=auto auto
++++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=10% 80%&size=auto auto
 ## ReplicaSets Self-Healing
 <div class="columns">
+	<div>
+	</div>
 	<div>
 - Take a Pod template and deploy a desired number of *replicas* of it
 - Instantiate background reconciliation loops
 - Add self-healing
 	</div>
-	<div>
-	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=90% 80%&size=auto auto
++++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=10% 80%&size=auto auto
 ## ReplicaSets Scaling
 <div class="columns">
 	<div>
-- Take a Pod template and deploy a desired number of *replicas* of it
-- Instantiate background reconciliation loops
-- Add self-healing, and scalability possibilities
 	</div>
 	<div>
 - Take a Pod template and deploy a desired number of *replicas* of it
