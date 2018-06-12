@@ -292,22 +292,31 @@ Note:
 <!-- .slide: data-transition="fade" -->
 
 Note:
-- toto
+- *Deployment* creates a new *ReplicaSet* for the next revision
+- *Pods* are deleted one by one on the old *ReplicaSet*
+- New *Pods* with the new version of the application are created on the new *ReplicaSet*
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png&position=10% 80%&size=auto auto
 
 ## Rolling Updates
 <div class="columns">
 	<div>
-- *Deployment* creates a new *ReplicaSet* for the next revision
-- *Pods* are deleted one by one on the old *ReplicaSet*
-- New *Pods* with the new version of the application are created on the new *ReplicaSet*
 	</div>
 	<div>
+- Additional parameters can be set :
+  - Minimum number of *Pods* available
+  - Amount of time to wait between to iteration
+- One single command to perform a Rolling Update
+- One single command to perform a Rollback
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
+
+Note:
+- *Deployment* creates a new *ReplicaSet* for the next revision
+- *Pods* are deleted one by one on the old *ReplicaSet*
+- New *Pods* with the new version of the application are created on the new *ReplicaSet*
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png&position=10% 80%&size=auto auto
 
@@ -316,15 +325,24 @@ Note:
 	<div>
 	</div>
 	<div>
+- Additional parameters can be set :
+  - Minimum number of *Pods* available
+  - Amount of time to wait between to iteration
+- One single command to perform a Rolling Update
+- One single command to perform a Rollback
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
+Note:
+- *Deployment* creates a new *ReplicaSet* for the next revision
+- *Pods* are deleted one by one on the old *ReplicaSet*
+- New *Pods* with the new version of the application are created on the new *ReplicaSet*
+
 ---
 
-## Benefits - But why are we actually doing all of this ?
-## k8s FTW
+## K8s Benefits
 
 - Self-healing
 - Scalability
