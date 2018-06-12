@@ -237,10 +237,14 @@ Note:
 - It **dynamically** get associated with a set of Pod using *labels*
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/Service.png&position=50% 170%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 ## Major components - Services
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/Service2.png&position=50% 170%&size=auto 130%
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 ## Major components - Services
 
