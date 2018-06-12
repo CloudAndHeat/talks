@@ -138,33 +138,64 @@ spec:
 ---
 
 ## Major components - Pods
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
+<div class="columns">
+	<div>
+- The atomic unit of deployment
+	</div>
+	<div>
+	</div>
+</div>
+
 
 - The atomic unit of deployment
-- A fenced environment in which is ran a container (or multiple containers in some special cases)
+- A fenced environment in which is ran a container
 - The minimum unit of scaling
-+Schema
 - Pods are cattle
 
 Note:
 
-- Atomic unit of deployment in VMware / Openstack : VM
+- Atomic unit of deployment in VMware / KVM / Hyper-V : VM
 - Atomic unit of deployment in Docker : Container
 - You don't run a container directly on a k8s cluster, you need to run it inside a Pod.
 - A Pod is a shared execution environment for one or more containers : they share a hostname, IP address, memory address space, sockets, volumes, ...
 - You do not scale by adding more of the same container to an existing Pod, but by adding more copy of your Pod.
 - Pods are mortal. If they die unexpectedly, we don't bother trying to bring them back to life. We just start a fresh new Pod (new ID, new IP address)
 
----
++++?image=2018/hassle-free-kubernetes-on-openstack/img/Pod.png&position=90% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 ## Major components - Pods antomy
 
-![Pods](2018/hassle-free-kubernetes-on-openstack/img/Pod.png)
+<div class="columns">
+	<div>
+- The atomic unit of deployment
+- A fenced environment in which is ran a container
+	</div>
+	<div>
+	</div>
+</div>
 
----
++++?image=2018/hassle-free-kubernetes-on-openstack/img/Scaling.png&position=90% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 ## Major components - Scaling Pods
 
-![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
+<div class="columns">
+	<div>
+- The atomic unit of deployment
+- A fenced environment in which is ran a container
+- The minimum unit of scaling
+- Pods are cattle
+	</div>
+	<div>
+	</div>
+</div>
+
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=10% 80%&size=auto auto
 ## ReplicaSets Watch Loop
@@ -263,18 +294,6 @@ Note:
 <!-- .slide: data-transition="fade" -->
 
 ## Rolling Updates
-
----
-
-## Real world use case - Rolling Updates
-
-![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
-
----
-
-## Real world use case - Rolling Updates
-
-![RollingUpdate3](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png)
 
 ---
 
