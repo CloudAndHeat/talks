@@ -291,6 +291,9 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
+Note:
+- toto
+
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png&position=10% 80%&size=auto auto
 
 ## Rolling Updates
