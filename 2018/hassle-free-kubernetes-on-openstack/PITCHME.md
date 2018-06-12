@@ -138,8 +138,6 @@ spec:
 ---
 
 ## Major components - Pods
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 <div class="columns">
 	<p>
@@ -150,6 +148,8 @@ spec:
 	<div>
 	</div>
 </div>
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 Note:
 
@@ -161,8 +161,6 @@ Note:
 - Pods are mortal. If they die unexpectedly, we don't bother trying to bring them back to life. We just start a fresh new Pod (new ID, new IP address)
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/Pod.png&position=90% 80%&size=auto auto
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 ## Major components - Pods
 
@@ -174,10 +172,10 @@ Note:
 	<div>
 	</div>
 </div>
-
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/Scaling.png&position=90% 80%&size=auto auto
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
+
++++?image=2018/hassle-free-kubernetes-on-openstack/img/Scaling.png&position=90% 80%&size=auto auto
 
 ## Major components - Pods
 
@@ -191,12 +189,11 @@ Note:
 	<div>
 	</div>
 </div>
-
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=10% 80%&size=auto auto
 ## ReplicaSets Watch Loop
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 <div class="columns">
 	<div>
 	</div>
@@ -205,6 +202,8 @@ Note:
 - Instantiate background reconciliation loops
 	</div>
 </div>
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 Note:
 
@@ -212,9 +211,9 @@ Note:
 - Specify a Pod template + a number of desired replicas in the manifest file
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=10% 80%&size=auto auto
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
+
 ## ReplicaSets Self-Healing
+
 <div class="columns">
 	<div>
 	</div>
@@ -224,11 +223,13 @@ Note:
 - Add self-healing
 	</div>
 </div>
-
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=10% 80%&size=auto auto
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
+
++++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=10% 80%&size=auto auto
+
 ## ReplicaSets Scaling
+
 <div class="columns">
 	<div>
 	</div>
@@ -238,6 +239,8 @@ Note:
 - Add self-healing, and scalability possibilities
 	</div>
 </div>
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 ---
 
@@ -255,16 +258,16 @@ Note:
 - It **dynamically** gets associated with a set of Pod using *labels*
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/Service.png&position=50% 170%&size=auto auto
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 ## Major components - Services
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/Service2.png&position=50% 170%&size=auto auto
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 ## Major components - Services
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 ---
 
@@ -274,22 +277,22 @@ Note:
 - Add rolling updates and simple rollbacks
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png&position=10% 80%&size=auto auto
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 ## Rolling Updates
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png&position=10% 80%&size=auto auto
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 ## Rolling Updates
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png&position=10% 80%&size=auto auto
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 ## Rolling Updates
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 ---
 
