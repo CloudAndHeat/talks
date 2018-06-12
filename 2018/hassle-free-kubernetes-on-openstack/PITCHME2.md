@@ -138,50 +138,65 @@ spec:
 ---
 
 ## Major components - Pods
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
+<div class="columns">
+	<p>
+- Toto
+- Tata
 - The atomic unit of deployment
-- A fenced environment in which is ran a container (or multiple containers in some special cases)
-- The minimum unit of scaling
-+Schema
-- Pods are cattle
+	</p>
+	<div>
+	</div>
+</div>
 
 Note:
 
-- Atomic unit of deployment in VMware / Openstack : VM
+- Atomic unit of deployment in VMware / KVM / Hyper-V : VM
 - Atomic unit of deployment in Docker : Container
 - You don't run a container directly on a k8s cluster, you need to run it inside a Pod.
 - A Pod is a shared execution environment for one or more containers : they share a hostname, IP address, memory address space, sockets, volumes, ...
 - You do not scale by adding more of the same container to an existing Pod, but by adding more copy of your Pod.
 - Pods are mortal. If they die unexpectedly, we don't bother trying to bring them back to life. We just start a fresh new Pod (new ID, new IP address)
 
----
++++?image=2018/hassle-free-kubernetes-on-openstack/img/Pod.png&position=90% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
-## Major components - Pods antomy
+## Major components - Pods
 
-![Pods](2018/hassle-free-kubernetes-on-openstack/img/Pod.png)
+<div class="columns">
+	<div>
+- The atomic unit of deployment
+- A fenced environment in which is ran a container
+	</div>
+	<div>
+	</div>
+</div>
 
----
++++?image=2018/hassle-free-kubernetes-on-openstack/img/Scaling.png&position=90% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
-## Major components - Scaling Pods
+## Major components - Pods
 
-![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
-
----
-
-## Major components - ReplicaSets
-
-- Take a Pod template and deploy a desired number of *replicas* of it
-- Instantiate background reconciliation loops
-- Add self-healing, and scalability possibilities
-
-Note:
-
-- Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
-- Specify a Pod template + a number of desired replicas in the manifest file
+<div class="columns">
+	<div>
+- The atomic unit of deployment
+- A fenced environment in which is ran a container
+- The minimum unit of scaling
+- Pods are cattle
+	</div>
+	<div>
+	</div>
+</div>
 
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=10% 80%&size=auto auto
 ## ReplicaSets Watch Loop
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 <div class="columns">
 	<div>
 	</div>
@@ -190,10 +205,15 @@ Note:
 - Instantiate background reconciliation loops
 	</div>
 </div>
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
+
+Note:
+
+- Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
+- Specify a Pod template + a number of desired replicas in the manifest file
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 ## ReplicaSets Self-Healing
 <div class="columns">
 	<div>
@@ -204,10 +224,10 @@ Note:
 - Add self-healing
 	</div>
 </div>
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 ## ReplicaSets Scaling
 <div class="columns">
 	<div>
@@ -218,25 +238,6 @@ Note:
 - Add self-healing, and scalability possibilities
 	</div>
 </div>
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
-
----?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=50% 80%&size=auto auto
-## ReplicaSets Watch Loop
-- toto
-- tata
-- titi
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=50% 80%&size=auto auto
-## ReplicaSets Self-Healing
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
-
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=50% 80%&size=auto auto
-## ReplicaSets Scaling
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 ---
 
@@ -251,19 +252,19 @@ Note:
 
 - Pods IP are unreliable
 - A Service gets its own **stable** IP address, DNS name, and port
-- It **dynamically** get associated with a set of Pod using *labels*
+- It **dynamically** gets associated with a set of Pod using *labels*
 
----
-
-## Major components - Services
-
-![Service1](2018/hassle-free-kubernetes-on-openstack/img/Service.png)
-
----
+---?image=2018/hassle-free-kubernetes-on-openstack/img/Service.png&position=50% 170%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 ## Major components - Services
 
-![Service2](2018/hassle-free-kubernetes-on-openstack/img/Service2.png)
++++?image=2018/hassle-free-kubernetes-on-openstack/img/Service2.png&position=50% 170%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
+## Major components - Services
 
 ---
 
@@ -272,26 +273,23 @@ Note:
 - Come on top of ReplicaSets, manage their lifecycle
 - Add rolling updates and simple rollbacks
 
----
+---?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
+## Rolling Updates
 
++++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
+## Rolling Updates
 
-## Real world use case - Rolling Updates
++++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
-![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
-
----
-
-## Real world use case - Rolling Updates
-
-![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
-
----
-
-## Real world use case - Rolling Updates
-
-![RollingUpdate3](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png)
+## Rolling Updates
 
 ---
 
