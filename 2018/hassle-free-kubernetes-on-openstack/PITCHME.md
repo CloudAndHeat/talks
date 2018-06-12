@@ -289,12 +289,12 @@ Note:
 	</div>
 </div>
 
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
 Note:
 - titi
 - tata
-
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png&position=10% 80%&size=auto auto
 
