@@ -183,27 +183,18 @@ Note:
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=50% 80%&size=auto auto
 ## ReplicaSets Watch Loop
 <!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=50% 80%&size=auto auto
-## ReplicaSets Watch Loop
+## ReplicaSets Self-Healing
 <!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=50% 80%&size=auto auto
-## ReplicaSets Watch Loop
+## ReplicaSets Scalingp
 <!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
 
----
-
-## ReplicaSets Watch Loop
-![WatchLoop](2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png){:height="36px"}
-<!-- .slide: data-transition="fade" -->
-+++
-## ReplicaSets Watch Loop
-![WatchLoopSelfHealing](2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png){:height="36px" width:"36px"}
-<!-- .slide: data-transition="fade" -->
-+++
-## ReplicaSets Watch Loop
-![WatchLoopScaling](2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png =36x)
-<!-- .slide: data-transition="fade" -->
 
 ---
 
