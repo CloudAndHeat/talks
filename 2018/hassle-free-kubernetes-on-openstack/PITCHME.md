@@ -166,22 +166,10 @@ Note:
 
 ![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
 
----
-
-## Major components - ReplicaSets
-
-- Take a Pod template and deploy a desired number of *replicas* of it
-- Instantiate background reconciliation loops
-- Add self-healing, and scalability possibilities
-
-Note:
-
-- Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
-- Specify a Pod template + a number of desired replicas in the manifest file
-
-
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=10% 80%&size=auto auto
 ## ReplicaSets Watch Loop
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 <div class="columns">
 	<div>
 	</div>
@@ -190,10 +178,15 @@ Note:
 - Instantiate background reconciliation loops
 	</div>
 </div>
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
+
+Note:
+
+- Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
+- Specify a Pod template + a number of desired replicas in the manifest file
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 ## ReplicaSets Self-Healing
 <div class="columns">
 	<div>
@@ -204,10 +197,10 @@ Note:
 - Add self-healing
 	</div>
 </div>
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 ## ReplicaSets Scaling
 <div class="columns">
 	<div>
@@ -218,8 +211,6 @@ Note:
 - Add self-healing, and scalability possibilities
 	</div>
 </div>
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="fade" -->
 
 ---
 
@@ -234,7 +225,7 @@ Note:
 
 - Pods IP are unreliable
 - A Service gets its own **stable** IP address, DNS name, and port
-- It **dynamically** get associated with a set of Pod using *labels*
+- It **dynamically** gets associated with a set of Pod using *labels*
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/Service.png&position=50% 170%&size=auto auto
 <!-- .slide: data-background-transition="none" -->
@@ -242,7 +233,7 @@ Note:
 
 ## Major components - Services
 
----?image=2018/hassle-free-kubernetes-on-openstack/img/Service2.png&position=50% 170%&size=auto auto
++++?image=2018/hassle-free-kubernetes-on-openstack/img/Service2.png&position=50% 170%&size=auto auto
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
@@ -255,14 +246,23 @@ Note:
 - Come on top of ReplicaSets, manage their lifecycle
 - Add rolling updates and simple rollbacks
 
----
+---?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
+## Rolling Updates
 
++++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
+## Rolling Updates
 
-## Real world use case - Rolling Updates
++++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png&position=10% 80%&size=auto auto
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
 
-![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
+## Rolling Updates
 
 ---
 
