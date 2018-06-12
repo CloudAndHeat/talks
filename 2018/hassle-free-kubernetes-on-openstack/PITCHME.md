@@ -186,8 +186,10 @@ Note:
 +++
 ![WatchLoop](2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png)
 <!-- .slide: data-background-transition="none" -->
++++
 ![WatchLoopSelfHealing](2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png)
 <!-- .slide: data-background-transition="none" -->
++++
 ![WatchLoopScaling](2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png)
 <!-- .slide: data-background-transition="none" -->
 
