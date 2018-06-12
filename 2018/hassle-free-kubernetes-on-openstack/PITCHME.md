@@ -277,18 +277,44 @@ Note:
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png&position=10% 80%&size=auto auto
 
 ## Rolling Updates
+<div class="columns">
+	<div>
+	</div>
+	<div>
+- **Deployment** creates a new **ReplicaSet** for the next revision
+- **Pods** are deleted one by one on the old **ReplicaSet**
+- New **Pods** with the new version of the application are created on the new **ReplicaSet**
+- Additional parameters can be set :
+  - Minimum number of **Pods** available
+  - Amount of time to wait between to iteration
+- One single command to perform a Rolling Update
+- One single command to perform a Rollback
+	</div>
+</div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png&position=10% 80%&size=auto auto
 
 ## Rolling Updates
+<div class="columns">
+	<div>
+	</div>
+	<div>
+	</div>
+</div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
 +++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png&position=10% 80%&size=auto auto
 
 ## Rolling Updates
+<div class="columns">
+	<div>
+	</div>
+	<div>
+	</div>
+</div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
