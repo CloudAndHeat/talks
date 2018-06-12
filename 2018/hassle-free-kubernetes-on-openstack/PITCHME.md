@@ -288,7 +288,6 @@ Note:
 - One single command to perform a Rollback
 	</div>
 </div>
-
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
