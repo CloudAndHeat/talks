@@ -149,12 +149,6 @@ spec:
 	</div>
 </div>
 
-
-- The atomic unit of deployment
-- A fenced environment in which is ran a container
-- The minimum unit of scaling
-- Pods are cattle
-
 Note:
 
 - Atomic unit of deployment in VMware / KVM / Hyper-V : VM
