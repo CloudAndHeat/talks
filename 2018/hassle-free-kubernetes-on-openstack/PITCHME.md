@@ -180,6 +180,33 @@ Note:
 - Specify a Pod template + a number of desired replicas in the manifest file
 
 
+---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=90% 80%&size=auto auto
+## ReplicaSets Watch Loop
+<div class="columns">
+	<div>
+		<br>
+		- toto toto toto toto toto toto toto toto toto toto toto toto toto toto toto toto
+		- tata toto toto toto toto toto toto toto toto toto toto toto toto toto toto toto
+		- titi toto toto toto toto toto toto toto toto toto toto toto toto toto toto toto
+		<br>
+		<span class="small">Cloud Infrastructure Architect</span>
+	</div>
+	<div>
+	</div>
+</div>
+
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
++++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=50% 80%&size=auto auto
+## ReplicaSets Self-Healing
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
++++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=50% 80%&size=auto auto
+## ReplicaSets Scaling
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=50% 80%&size=auto auto
 ## ReplicaSets Watch Loop
 - toto
