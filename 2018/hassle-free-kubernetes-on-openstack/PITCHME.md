@@ -140,11 +140,9 @@ spec:
 ## Major components - Pods
 
 <div class="columns">
-	<p>
-- Toto
-- Tata
+	<div>
 - The atomic unit of deployment
-	</p>
+	</div>
 	<div>
 	</div>
 </div>
