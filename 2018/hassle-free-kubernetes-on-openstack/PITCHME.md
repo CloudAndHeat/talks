@@ -79,13 +79,13 @@ Note:
 
 ### The Kubernetes (k8s) Project
 
-<div style='display: flex; flex-direction: column'>
-	<div style='height: 75%'>
+<div style='justify-content: space-between; display: flex; flex-direction: column'>
+	<div>
 - Originally developed by Google, open-source since 2014
 - Written in Go (Golang)
 - The leading Container Orchestrator vs Docker Swarm and Mesos
 	</div>
-	<div style='height: 25%'>
+	<div>
 ![Kubernetes](2018/hassle-free-kubernetes-on-openstack/img/kubernetes.png) { float: right; }
 ![CNCF](2018/hassle-free-kubernetes-on-openstack/img/cncf.png) { float: left; }
 	</div>
