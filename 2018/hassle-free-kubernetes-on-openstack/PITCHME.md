@@ -392,13 +392,24 @@ Note:
 
 ---
 
-## Kubernetes over Openstack
-
+## Openstack
 - Openstack, an Open Source software for building Public and Private Clouds
 - A collection of services for Compute, Network, Storage resources, and more
 - Openstack Magnum for the automated deployment of k8s clusters
+
+Note:
+- What is Openstack ? Cloud platform / sofware
+- Openstack Heat to deploy templates on Openstack
+- Openstack Magnum using Openstack Heat to deploy k8s clusters on Openstack
+- customer needs
+- Production setup : 3 k8s Master nodes, running on different nodes.
+
+---
+
+## Kubernetes over Openstack
+
 - Creation of Cluster templates
-- Creation of multiple clusters, based on those templates.
+- Creation of multiple clusters, based on those templates
 - No manual installation of Kubernetes required !
 
 Note:
