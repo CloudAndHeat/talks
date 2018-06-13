@@ -179,13 +179,13 @@ Note:
 ## Major components - Pods
 
 <div class="columns">
-	<div style='width: 70%'>
+	<div>
 - The atomic unit of deployment
 - A fenced environment in which is ran a container
 - The minimum unit of scaling
 - Pods are cattle
 	</div>
-	<div style='width: 30%'>
+	<div>
 ![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
 	</div>
 </div>
@@ -198,7 +198,7 @@ Note:
 	<div>
 ![WatchLoop1](2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png)
 	</div>
-	<div>
+	<div style='width: 60%'>
 - Take a Pod template and deploy a desired number of *replicas* of it
 - Instantiate background reconciliation loops
 	</div>
@@ -219,7 +219,7 @@ Note:
 	<div>
 ![WatchSelfHealing](2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png)
 	</div>
-	<div>
+	<div style='width: 65%'>
 - Take a Pod template and deploy a desired number of *replicas* of it
 - Instantiate background reconciliation loops
 - Add self-healing
@@ -236,7 +236,7 @@ Note:
 	<div>
 ![WatchLoopScaling](2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png)
 	</div>
-	<div>
+	<div style='width: 70%'>
 - Take a Pod template and deploy a desired number of *replicas* of it
 - Instantiate background reconciliation loops
 - Add self-healing, and scalability possibilities
