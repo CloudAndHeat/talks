@@ -392,7 +392,7 @@ Note:
 
 ---
 
-## Openstack
+### Openstack
 - Openstack, an Open Source software for building Public and Private Clouds
 - A collection of services for Compute, Network, Storage resources, and more
 - Openstack Magnum for the automated deployment of k8s clusters
@@ -401,7 +401,6 @@ Note:
 - What is Openstack ? Cloud platform / sofware
 - Openstack Heat to deploy templates on Openstack
 - Openstack Magnum using Openstack Heat to deploy k8s clusters on Openstack
-- customer needs
 - Production setup : 3 k8s Master nodes, running on different nodes.
 
 ---
@@ -416,8 +415,9 @@ Note:
 - What is Openstack ? Cloud platform / sofware
 - Openstack Heat to deploy templates on Openstack
 - Openstack Magnum using Openstack Heat to deploy k8s clusters on Openstack
-- customer needs
 - Production setup : 3 k8s Master nodes, running on different nodes.
+- Automatically spawns a Master, some nodes
+- Supports Multi Master mode
 
 ---
 
