@@ -179,13 +179,13 @@ Note:
 ## Major components - Pods
 
 <div class="columns">
-	<div>
+	<div style='width: 70%'>
 - The atomic unit of deployment
 - A fenced environment in which is ran a container
 - The minimum unit of scaling
 - Pods are cattle
 	</div>
-	<div>
+	<div style='width: 30%'>
 ![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
 	</div>
 </div>
