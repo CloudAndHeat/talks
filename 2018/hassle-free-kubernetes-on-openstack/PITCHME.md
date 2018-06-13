@@ -168,13 +168,13 @@ Note:
 - A fenced environment in which is ran a container
 	</div>
 	<div>
-![Logo](2018/hassle-free-kubernetes-on-openstack/img/Pod.png)
+![Pod](2018/hassle-free-kubernetes-on-openstack/img/Pod.png)
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/Scaling.png&position=90% 120%&size=auto auto
++++
 
 ## Major components - Pods
 
@@ -186,15 +186,17 @@ Note:
 - Pods are cattle
 	</div>
 	<div>
+![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
----?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png&position=10% 120%&size=auto auto
+---
 ## ReplicaSets Watch Loop
 <div class="columns">
 	<div>
+![WatchLoop1](2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png)
 	</div>
 	<div>
 - Take a Pod template and deploy a desired number of *replicas* of it
@@ -209,12 +211,13 @@ Note:
 - Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
 - Specify a Pod template + a number of desired replicas in the manifest file
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png&position=10% 120%&size=auto auto
++++
 
 ## ReplicaSets Self-Healing
 
 <div class="columns">
 	<div>
+![WatchSelfHealing](2018/hassle-free-kubernetes-on-openstack/img/WatchSelfHealing.png)
 	</div>
 	<div>
 - Take a Pod template and deploy a desired number of *replicas* of it
@@ -225,12 +228,13 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png&position=10% 120%&size=auto auto
++++
 
 ## ReplicaSets Scaling
 
 <div class="columns">
 	<div>
+![WatchLoopScaling](2018/hassle-free-kubernetes-on-openstack/img/WatchLoopScaling.png)
 	</div>
 	<div>
 - Take a Pod template and deploy a desired number of *replicas* of it
@@ -275,11 +279,12 @@ Note:
 - Come on top of ReplicaSets, manage their lifecycle
 - Add rolling updates and simple rollbacks
 
----?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png&position=10% 80%&size=auto auto
+---
 
 ## Rolling Updates
 <div class="columns">
 	<div>
+![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
 	</div>
 	<div>
 - Additional parameters can be set :
@@ -297,11 +302,12 @@ Note:
 - *Pods* are deleted one by one on the old *ReplicaSet*
 - New *Pods* with the new version of the application are created on the new *ReplicaSet*
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png&position=10% 80%&size=auto auto
++++
 
 ## Rolling Updates
 <div class="columns">
 	<div>
+![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
 	</div>
 	<div>
 - Additional parameters can be set :
@@ -319,11 +325,12 @@ Note:
 - *Pods* are deleted one by one on the old *ReplicaSet*
 - New *Pods* with the new version of the application are created on the new *ReplicaSet*
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png&position=10% 80%&size=auto auto
++++
 
 ## Rolling Updates
 <div class="columns">
 	<div>
+![RollingUpdate3](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png)
 	</div>
 	<div>
 - Additional parameters can be set :
