@@ -69,20 +69,34 @@ Note:
 
 ---
 
-## The Kubernetes (k8s) Project
+### The Kubernetes (k8s) Project
 
 - Originally developed by Google, open-source since 2014
 - Written in Go (Golang)
 - The leading Container Orchestrator vs Docker Swarm and Mesos
 
+
 ---
 
-## Kubernetes High Level Architecture
+### MicroService
+
+![Workflow](2018/hassle-free-kubernetes-on-openstack/img/microservices.png)
+
+Notes :
+
+- a set of independent services that are developed, deployed and maintained separately
+- Better Flexibility : Update of a single microservice doesn't affect the other parts of the application
+- Better Resiliency : Eliminates SPOF
+- Better Agility : Update more often, brings newer version of the app more often.
+
+---
+
+### Kubernetes High Level Architecture
 
 - An orchestrator of containarized applications
 - Two types of linux hosts
 - One or more Masters : brain & memory
-- A bunch of Nodes : muscles - where the pods are actually deployed
+- A bunch of Nodes : muscles - where the *Pods* are actually deployed
 
 Note:
 
@@ -94,7 +108,7 @@ Note:
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/k8s_architecture.png&size=70%
 
-## Kubernetes High Level Architecture
+### Kubernetes High Level Architecture
 
 Note:
 
@@ -106,7 +120,7 @@ Note:
 
 ---
 
-## Kubernetes principles
+### Kubernetes principles
 
 - Manifest file written in JSON or YAML
 - *Declarative model*, as opposition to the *imperative model*
@@ -126,7 +140,7 @@ Note:
 
 ---
 
-## Manifest file in YAML
+### Manifest file in YAML
 
 ```
 apiVersion: apps/v1beta1
@@ -149,7 +163,7 @@ spec:
 
 ---
 
-## Major components - Pods
+### Major components - Pods
 
 <div class="columns">
 	<div>
@@ -172,7 +186,7 @@ Note:
 
 +++
 
-## Major components - Pods
+### Major components - Pods
 
 <div class="columns">
 	<div>
@@ -188,7 +202,7 @@ Note:
 
 +++
 
-## Major components - Pods
+### Major components - Pods
 
 <div class="columns">
 	<div>
@@ -205,7 +219,7 @@ Note:
 <!-- .slide: data-transition="fade" -->
 
 ---
-## ReplicaSets Watch Loop
+### ReplicaSets Watch Loop
 <div class="columns">
 	<div>
 ![WatchLoop1](2018/hassle-free-kubernetes-on-openstack/img/WatchLoop1.png)
@@ -225,7 +239,7 @@ Note:
 
 +++
 
-## ReplicaSets Self-Healing
+### ReplicaSets Self-Healing
 
 <div class="columns">
 	<div>
@@ -242,7 +256,7 @@ Note:
 
 +++
 
-## ReplicaSets Scaling
+### ReplicaSets Scaling
 
 <div class="columns">
 	<div>
@@ -259,7 +273,7 @@ Note:
 
 ---
 
-## Major components - Services
+### Major components - Services
 
 - Provide a reliable networking endpoint for a set of Pods
 - Provide stable DNS, IP addresses, and support TCP and UDP
@@ -274,7 +288,7 @@ Note:
 
 ---
 
-## Major components - Services
+### Major components - Services
 
 <div>
 ![Service](2018/hassle-free-kubernetes-on-openstack/img/Service.png)
@@ -285,7 +299,7 @@ Note:
 
 +++
 
-## Major components - Services
+### Major components - Services
 
 
 ![Service2](2018/hassle-free-kubernetes-on-openstack/img/Service2.png)
@@ -296,14 +310,14 @@ Note:
 
 ---
 
-## Major components - Deployments
+### Major components - Deployments
 
 - Come on top of ReplicaSets, manage their lifecycle
 - Add rolling updates and simple rollbacks
 
 ---
 
-## Rolling Updates
+### Rolling Updates
 <div class="columns">
 	<div>
 ![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
@@ -325,7 +339,7 @@ Note:
 
 +++
 
-## Rolling Updates
+### Rolling Updates
 <div class="columns">
 	<div>
 ![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
@@ -347,7 +361,7 @@ Note:
 
 +++
 
-## Rolling Updates
+### Rolling Updates
 <div class="columns">
 	<div>
 ![RollingUpdate3](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png)
@@ -369,7 +383,7 @@ Note:
 
 ---
 
-## K8s Benefits
+### K8s Benefits
 
 - Self-healing
 - Scalability
@@ -405,7 +419,7 @@ Note:
 
 ---
 
-## Kubernetes over Openstack
+### Kubernetes over Openstack
 
 - Creation of Cluster templates
 - Creation of multiple clusters, based on those templates
@@ -421,7 +435,7 @@ Note:
 
 ---
 
-## Books & pieces of documentations
+### Books & pieces of documentations
 
 - The Kubernetes Book by Nigel Poulton
 - PWK : https://labs.play-with-k8s.com/
