@@ -3,5 +3,5 @@ theme-override: assets/css/cloudandheat.css
 logo: assets/images/logo.png
 logo-position: top-right
 remote-control: true
-published: true
+published: false
 layout: top-left

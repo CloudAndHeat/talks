@@ -4,28 +4,22 @@
 
 ---
 
-## About Us
+### About Us
 
-<div class="columns">
+<div class="columns" style="margin-top: 3em;">
 	<div>
-		<img src="http://placeholder.pics/svg/200x200">
-		<br>
-		**Matthias Goerens**
-		<br>
+		<h5>Matthias Goerens</h5>
 		<span class="small">Cloud Infrastructure Architect</span>
 	</div>
 	<div>
-		<img src="http://placeholder.pics/svg/200x200">
-		<br>
-		**Daniel Trautmann**
-		<br>
+		<h5>Daniel Trautmann</h5>
 		<span class="small">DevOps Engineer</span>
 	</div>
 </div>
 
 ---
 
-## About CLOUD&HEAT
+### About CLOUD&HEAT
 
 - Build energy efficient data centers
 - Operate public and private cloud infrastructure based on OpenStack
@@ -33,12 +27,12 @@
 
 Note:
 
+- Watercooled servers
 - Micro- and containerized data centers
-- Watercooled
 
 ---
 
-## The Problem... even with cloud solutions
+### The Problem... even with cloud solutions
 
 - Worry about high availability of services
 - Create new servers and scripts for each new service
@@ -51,7 +45,7 @@ Note:
 
 ---
 
-![Tasks](2018/hassle-free-kubernetes-on-openstack/img/tasks.png)
+![Tasks](2018/hassle-free-kubernetes-on-openstack/img/automated_tasks.png)
 
 Note:
 
@@ -61,7 +55,7 @@ Note:
 
 ---
 
-![Workflow](2018/hassle-free-kubernetes-on-openstack/img/workflow.png)
+![Workflow](2018/hassle-free-kubernetes-on-openstack/img/deployment_workflow.png)
 
 Note:
 
@@ -242,3 +236,5 @@ Note:
 
 - The Kubernetes Book by Nigel Poulton
 - PWK : https://labs.play-with-k8s.com/
+
+---?image=2018/hassle-free-kubernetes-on-openstack/img/qr.png&position=center&size=40%

@@ -21,6 +21,11 @@
 	max-height: 1.5em;
 }
 
+/* Center a single slide */
+.reveal div.center {
+	text-align: center;
+}
+
 /* Column support for slides */
 .reveal div.columns {
 	display: flex;
@@ -32,6 +37,6 @@
 	width: 50%;
 }
 
-.reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+.reveal h2, .reveal h3, .reveal h4 {
 	color: #84bd00
 }
