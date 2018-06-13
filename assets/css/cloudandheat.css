@@ -33,5 +33,9 @@
 }
 
 .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-	color: #84bd00
+	color: #84bd00;
+}
+
+.reveal section code {
+    max-height: none;
 }
