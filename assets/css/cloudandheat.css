@@ -1,7 +1,8 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i');
 
-.reveal {
+.reveal,
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
 	font-family: 'Montserrat', sans-serif;
 }
 
