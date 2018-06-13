@@ -176,6 +176,17 @@ spec:
         - containerPort: 8080
 ```
 
+Note:
+1. Manifest files tell k8s how we want our application to look -> Describe the desired state
+2. POST it to the k8s API server
+3. k8s records the configuration in the *cluster store*
+4. k8s deploys the app on the Nodes :
+	Pulling docker images
+	Starting containers
+	Building networks
+5. k8s implements a *watch loop* (or *background reconciliation loop*) that constantly monitors the state of the cluster
+6. If the *current state* of the cluster differs from the *desired state*, k8s uses the manifest files to fix it.
+
 ---
 
 ### Major components - Pods
@@ -215,6 +226,14 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
+Note:
+
+- Atomic unit of deployment in VMware / KVM / Hyper-V : VM
+- Atomic unit of deployment in Docker : Container
+- You don't run a container directly on a k8s cluster, you need to run it inside a Pod.
+- A Pod is a shared execution environment for one or more containers : they share a hostname, IP address, memory address space, sockets, volumes, ...
+- You do not scale by adding more of the same container to an existing Pod, but by adding more copy of your Pod.
+- Pods are mortal. If they die unexpectedly, we don't bother trying to bring them back to life. We just start a fresh new Pod (new ID, new IP address)
 +++
 
 ### Major components - Pods
@@ -224,7 +243,7 @@ Note:
 - The atomic unit of deployment
 - A fenced environment in which is ran a container
 - The minimum unit of scaling
-- Pods are cattle
+- Pods are mortal
 	</div>
 	<div>
 ![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
@@ -232,6 +251,15 @@ Note:
 </div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
+
+Note:
+
+- Atomic unit of deployment in VMware / KVM / Hyper-V : VM
+- Atomic unit of deployment in Docker : Container
+- You don't run a container directly on a k8s cluster, you need to run it inside a Pod.
+- A Pod is a shared execution environment for one or more containers : they share a hostname, IP address, memory address space, sockets, volumes, ...
+- You do not scale by adding more of the same container to an existing Pod, but by adding more copy of your Pod.
+- Pods are cattle. If they die unexpectedly, we don't bother trying to bring them back to life. We just start a fresh new Pod (new ID, new IP address)
 
 ---
 ### ReplicaSets Watch Loop
@@ -269,6 +297,11 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
+Note:
+
+- Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
+- Specify a Pod template + a number of desired replicas in the manifest file
+
 +++
 
 ### ReplicaSets Scaling
@@ -285,6 +318,11 @@ Note:
 </div>
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
+
+Note:
+
+- Instantiate background reconciliation loops (that check and make sure that the desired number of replicas are always running)
+- Specify a Pod template + a number of desired replicas in the manifest file
 
 ---
 
@@ -338,10 +376,10 @@ Note:
 ![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
 	</div>
 	<div style='width: 65%'>
-- Minimum number of *Pods* available
-- Amount of time to wait between to iteration
 - One single command to perform a Rolling Update
 - One single command to perform a Rollback
+- Minimum number of *Pods* available
+- Amount of time to wait between to iteration
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -360,10 +398,10 @@ Note:
 ![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
 	</div>
 	<div style='width: 65%'>
-- Minimum number of *Pods* available
-- Amount of time to wait between to iteration
 - One single command to perform a Rolling Update
 - One single command to perform a Rollback
+- Minimum number of *Pods* available
+- Amount of time to wait between to iteration
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -382,10 +420,10 @@ Note:
 ![RollingUpdate3](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png)
 	</div>
 	<div style='width: 65%'>
-- Minimum number of *Pods* available
-- Amount of time to wait between to iteration
 - One single command to perform a Rolling Update
 - One single command to perform a Rollback
+- Minimum number of *Pods* available
+- Amount of time to wait between to iteration
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -436,7 +474,7 @@ Note:
 
 ### Kubernetes over Openstack
 
-- Creation of Cluster templates
+- Creation of cluster templates
 - Creation of multiple clusters, based on those templates
 - No manual installation of Kubernetes required !
 
