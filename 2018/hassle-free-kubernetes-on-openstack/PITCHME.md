@@ -286,7 +286,7 @@ Note:
 	<div>
 ![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
 	</div>
-	<div>
+	<div style='width: 65%'>
 - Additional parameters can be set :
   - Minimum number of *Pods* available
   - Amount of time to wait between to iteration
@@ -309,7 +309,7 @@ Note:
 	<div>
 ![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
 	</div>
-	<div>
+	<div style='width: 65%'>
 - Additional parameters can be set :
   - Minimum number of *Pods* available
   - Amount of time to wait between to iteration
@@ -332,7 +332,7 @@ Note:
 	<div>
 ![RollingUpdate3](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png)
 	</div>
-	<div>
+	<div style='width: 65%'>
 - Additional parameters can be set :
   - Minimum number of *Pods* available
   - Amount of time to wait between to iteration
