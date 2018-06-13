@@ -158,7 +158,7 @@ Note:
 - You do not scale by adding more of the same container to an existing Pod, but by adding more copy of your Pod.
 - Pods are mortal. If they die unexpectedly, we don't bother trying to bring them back to life. We just start a fresh new Pod (new ID, new IP address)
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/Pod.png&position=90% 120%&size=auto auto
++++
 
 ## Major components - Pods
 
@@ -168,6 +168,7 @@ Note:
 - A fenced environment in which is ran a container
 	</div>
 	<div>
+![Logo](2018/hassle-free-kubernetes-on-openstack/img/Pod.png)
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -347,20 +348,21 @@ Note:
 - Self-healing
 - Scalability
 - Version Control
+- Simple Rolling Updates and Rollbacks
 - Basic Load-Balancing
+- Run code in production without setting up new servers
 
 Note:
-- Example of an application ran with Docker / with K8s ?
 - Self-healing
 - Scalability
 - Version Control
 - Load-Balancing
-run code in production without setting up new servers
-run new service with one command / API call
-fits perfectly for CI/CD
-start test environments within seconds
-fast rollbacks
-takes care of availability
+- run code in production without setting up new servers
+- run new service with one command / API call
+- fits perfectly for CI/CD
+- start test environments within seconds
+- fast rollbacks
+- takes care of availability
 
 ---
 
