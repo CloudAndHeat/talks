@@ -310,9 +310,8 @@ Note:
 ![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
 	</div>
 	<div style='width: 65%'>
-- Additional parameters can be set :
-  - Minimum number of *Pods* available
-  - Amount of time to wait between to iteration
+- Minimum number of *Pods* available
+- Amount of time to wait between to iteration
 - One single command to perform a Rolling Update
 - One single command to perform a Rollback
 	</div>
