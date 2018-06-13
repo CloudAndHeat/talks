@@ -489,10 +489,8 @@ Note:
 
 ---
 
-### Thanks!
-
+<span style="font-size: 2em;">Enjoy the 🍺</span>
+<br><br><br>
 **Slides:** https://github.com/CloudAndHeat/talks
-
-**Enjoy the** 🍺
 
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/qr.png&position=center&size=40%
