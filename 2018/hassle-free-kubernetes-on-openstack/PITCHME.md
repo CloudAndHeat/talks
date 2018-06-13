@@ -71,6 +71,14 @@ Note:
 
 ### The Kubernetes (k8s) Project
 
+- Originally developed by Google, open-source since 2014
+- Written in Go (Golang)
+- The leading Container Orchestrator vs Docker Swarm and Mesos
+
+---
+
+### The Kubernetes (k8s) Project
+
 <div style='display: flex; flex-direction: column'>
 	<div style='height: 75%'>
 - Originally developed by Google, open-source since 2014
