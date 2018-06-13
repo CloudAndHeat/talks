@@ -493,4 +493,6 @@ Note:
 
 **Slides:** https://github.com/CloudAndHeat/talks
 
+**Enjoy the** 🍺
+
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/qr.png&position=center&size=40%
