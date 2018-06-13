@@ -487,4 +487,10 @@ Note:
 - The Kubernetes Book by Nigel Poulton
 - PWK : https://labs.play-with-k8s.com/
 
+---
+
+### Thanks!
+
+**Slides:** https://github.com/CloudAndHeat/talks
+
 ---?image=2018/hassle-free-kubernetes-on-openstack/img/qr.png&position=center&size=40%
