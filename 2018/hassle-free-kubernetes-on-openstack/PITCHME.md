@@ -92,6 +92,19 @@ Note:
 - Nodes are where the application services run; report back to the masters; watch for changes.
 - Masters and Nodes can be bare metal servers or VMs (in Openstack of course)
 
+---?image=2018/hassle-free-kubernetes-on-openstack/img/k8s_architecture.png&size=70%
+
+## Kubernetes High Level Architecture
+
+Note:
+
+- containerized applications : for example docker
+- Masters & Nodes (Minions)
+- Masters decide on which node to schedule application services on; monitor the cluster; implement changes; respond to events
+- Nodes are where the application services run; report back to the masters; watch for changes.
+- Masters and Nodes can be bare metal servers or VMs (in Openstack of course)
+
+
 ---
 
 ## Kubernetes principles
