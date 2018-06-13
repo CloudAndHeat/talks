@@ -260,15 +260,25 @@ Note:
 - A Service gets its own **stable** IP address, DNS name, and port
 - It **dynamically** gets associated with a set of Pod using *labels*
 
----?image=2018/hassle-free-kubernetes-on-openstack/img/Service.png&position=50% 170%&size=auto auto
+---
 
 ## Major components - Services
+
+<div>
+![Service](2018/hassle-free-kubernetes-on-openstack/img/Service.png)
+</div>
+
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
-+++?image=2018/hassle-free-kubernetes-on-openstack/img/Service2.png&position=50% 170%&size=auto auto
++++
 
 ## Major components - Services
+
+
+![Service2](2018/hassle-free-kubernetes-on-openstack/img/Service2.png)
+
+
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
 
