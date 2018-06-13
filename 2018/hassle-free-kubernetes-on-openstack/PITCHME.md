@@ -22,11 +22,12 @@
 ### About CLOUD&HEAT
 
 - Build energy efficient data centers
-- Operate public and private cloud infrastructure based on OpenStack
+- Operate public and private cloud infrastructures based on OpenStack
 - Develop security extensions for OpenStack
 
 Note:
 
+- Technology to use the heat produced by servers
 - Watercooled servers
 - Micro- and containerized data centers
 
@@ -36,12 +37,13 @@ Note:
 
 - Worry about high availability of services
 - Create new servers and scripts for each new service
-- Maintain a lot of (virtual) server
+- Maintain a lot of (virtual) servers
 
 Note:
 
 - Scripts: configuration management system
 - Maintain: Install updates / security fixes
+- Some companies might not even have automation
 
 ---
 
@@ -59,7 +61,10 @@ Note:
 
 Note:
 
-- Deploy software: Automated tasks (Asnible)
+- Deploy software: Automated tasks (Ansible)
+- Still usable for other things
+- Was good for some time, but now we can do better
+- HAND OVER TO MATTHIAS
 
 ---
 
