@@ -75,14 +75,13 @@ Note:
 - Written in Go (Golang)
 - The leading Container Orchestrator vs Docker Swarm and Mesos
 
-
 ---
 
-### MicroService
+### Monolith vs MicroServices
 
 ![Workflow](2018/hassle-free-kubernetes-on-openstack/img/microservices.png)
 
-Notes :
+Note:
 
 - a set of independent services that are developed, deployed and maintained separately
 - Better Flexibility : Update of a single microservice doesn't affect the other parts of the application
