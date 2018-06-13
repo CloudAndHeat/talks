@@ -104,7 +104,6 @@ Note:
 - Nodes are where the application services run; report back to the masters; watch for changes.
 - Masters and Nodes can be bare metal servers or VMs (in Openstack of course)
 
-
 ---
 
 ## Kubernetes principles
