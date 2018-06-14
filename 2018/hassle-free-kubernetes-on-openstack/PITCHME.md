@@ -320,8 +320,7 @@ Note:
 
 ### Major components - Services
 
-- Provide a reliable networking endpoint for a set of Pods
-- Provide stable DNS, IP addresses, and support TCP and UDP
+- Provide a reliable networking endpoint for a set of Pods : stable DNS and IP addresses
 - Perform simple randomized load-balancing across Pods
 - Automatically updates itself when Pods come and go
 
