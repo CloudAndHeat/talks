@@ -76,7 +76,7 @@ Note:
 
 <div class="columns" style="align-items: center;">
 	<div>
-		<img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg" style="height: 60%;">
+		<img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png" style="height: 60%;">
 	</div>
 	<div>
 ![CNCF](2018/hassle-free-kubernetes-on-openstack/img/cncf.png)
