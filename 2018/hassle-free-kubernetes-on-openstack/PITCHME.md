@@ -394,6 +394,7 @@ Note:
 
 Note:
 - Update Manifest file to a launch Rolling Update
+- One single command
 
 ---
 
