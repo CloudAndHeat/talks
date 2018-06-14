@@ -74,9 +74,9 @@ Note:
 - Written in Go (Golang)
 - The leading Container Orchestrator vs Docker Swarm and Mesos
 
-<div class="columns">
+<div class="columns" style="align-items: center;">
 	<div>
-![Kubernetes](2018/hassle-free-kubernetes-on-openstack/img/k8s.png)
+![Kubernetes](2018/hassle-free-kubernetes-on-openstack/img/k8s.png) {height: 60%;}
 	</div>
 	<div>
 ![CNCF](2018/hassle-free-kubernetes-on-openstack/img/cncf.png)
