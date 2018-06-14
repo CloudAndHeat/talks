@@ -209,7 +209,7 @@ Note:
 <div class="columns">
 	<div>
 - The atomic unit of deployment
-- A fenced environment in which is ran a container
+- A fenced environment in which is run a container
 	</div>
 	<div>
 ![Pod](2018/hassle-free-kubernetes-on-openstack/img/Pod.png)
@@ -233,7 +233,7 @@ Note:
 <div class="columns">
 	<div>
 - The atomic unit of deployment
-- A fenced environment in which is ran a container
+- A fenced environment in which is run a container
 - The minimum unit of scaling
 - Pods are mortal
 	</div>
@@ -393,7 +393,7 @@ Note:
 - One single command to perform a Rolling Update
 - One single command to perform a Rollback
 - Minimum number of *Pods* available
-- Amount of time to wait between to iteration
+- Amount of time to wait between two iteration
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -403,6 +403,7 @@ Note:
 - *Deployment* creates a new *ReplicaSet* for the next revision
 - *Pods* are deleted one by one on the old *ReplicaSet*
 - New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
 
 +++
 
@@ -415,7 +416,7 @@ Note:
 - One single command to perform a Rolling Update
 - One single command to perform a Rollback
 - Minimum number of *Pods* available
-- Amount of time to wait between to iteration
+- Amount of time to wait between two iteration
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -425,6 +426,7 @@ Note:
 - *Deployment* creates a new *ReplicaSet* for the next revision
 - *Pods* are deleted one by one on the old *ReplicaSet*
 - New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
 
 ---
 
