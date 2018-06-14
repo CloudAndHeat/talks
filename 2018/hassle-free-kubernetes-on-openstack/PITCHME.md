@@ -76,7 +76,7 @@ Note:
 
 <div class="columns">
 	<div>
-![Kubernetes](2018/hassle-free-kubernetes-on-openstack/img/kubernetes.png)
+![Kubernetes](2018/hassle-free-kubernetes-on-openstack/img/k8s.png)
 	</div>
 	<div>
 ![CNCF](2018/hassle-free-kubernetes-on-openstack/img/cncf.png)
