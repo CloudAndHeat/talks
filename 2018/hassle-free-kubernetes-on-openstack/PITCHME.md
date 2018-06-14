@@ -400,14 +400,51 @@ Note:
 ### Rolling Updates
 <div class="columns">
 	<div>
+![RollingUpdate0](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate0.png)
+	</div>
+	<div style='width: 65%'>
+	</div>
+</div>
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
+Note:
+- *Deployment* creates a new *ReplicaSet* for the next revision
+- *Pods* are deleted one by one on the old *ReplicaSet*
+- New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
+
++++
+
+### Rolling Updates
+<div class="columns">
+	<div>
+![RollingUpdate0b](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate0b.png)
+	</div>
+	<div style='width: 65%'>
+- Creation of a new *ReplicaSet* for the next revision
+	</div>
+</div>
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
+Note:
+- *Deployment* creates a new *ReplicaSet* for the next revision
+- *Pods* are deleted one by one on the old *ReplicaSet*
+- New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
+
++++
+
+### Rolling Updates
+<div class="columns">
+	<div>
 ![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
 	</div>
 	<div style='width: 65%'>
 - Creation of a new *ReplicaSet* for the next revision
-- *Pods* with Rev. A are deleted
-- New *Pods* with Rev. B are created
-- No downtime
-- Fast Rollbacks
+- *Pods* with Revision A are deleted
+- New *Pods* with Revision B are created
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -427,10 +464,10 @@ Note:
 ![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
 	</div>
 	<div style='width: 65%'>
-- One single command to perform a Rolling Update
-- One single command to perform a Rollback
-- Minimum number of *Pods* available
-- Amount of time to wait between two iteration
+- Creation of a new *ReplicaSet* for the next revision
+- *Pods* with Rev. A are deleted
+- New *Pods* with Rev. B are created
+- No downtime
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -450,10 +487,11 @@ Note:
 ![RollingUpdate3](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png)
 	</div>
 	<div style='width: 65%'>
-- One single command to perform a Rolling Update
-- One single command to perform a Rollback
-- Minimum number of *Pods* available
-- Amount of time to wait between two iteration
+- Creation of a new *ReplicaSet* for the next revision
+- *Pods* with Rev. A are deleted
+- New *Pods* with Rev. B are created
+- No downtime
+- Fast Rollbacks
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
