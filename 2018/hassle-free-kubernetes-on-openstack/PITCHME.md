@@ -525,6 +525,7 @@ Note:
 - start test environments within seconds
 - fast rollbacks
 - takes care of availability
+- But : complexity of deployment
 
 ---
 
