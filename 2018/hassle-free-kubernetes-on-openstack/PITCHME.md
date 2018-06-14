@@ -209,7 +209,7 @@ Note:
 <div class="columns">
 	<div>
 - The atomic unit of deployment
-- A fenced environment in which is ran a container
+- A fenced environment in which is run a container
 	</div>
 	<div>
 ![Pod](2018/hassle-free-kubernetes-on-openstack/img/Pod.png)
@@ -233,7 +233,33 @@ Note:
 <div class="columns">
 	<div>
 - The atomic unit of deployment
-- A fenced environment in which is ran a container
+- A fenced environment in which is run a container
+- The minimum unit of scaling
+	</div>
+	<div>
+![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
+	</div>
+</div>
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
+Note:
+
+- Atomic unit of deployment in VMware / KVM / Hyper-V : VM
+- Atomic unit of deployment in Docker : Container
+- You don't run a container directly on a k8s cluster, you need to run it inside a Pod.
+- A Pod is a shared execution environment for one or more containers : they share a hostname, IP address, memory address space, sockets, volumes, ...
+- You do not scale by adding more of the same container to an existing Pod, but by adding more copy of your Pod.
+- Pods are cattle. If they die unexpectedly, we don't bother trying to bring them back to life. We just start a fresh new Pod (new ID, new IP address)
+
++++
+
+### Major components - Pods
+
+<div class="columns">
+	<div>
+- The atomic unit of deployment
+- A fenced environment in which is run a container
 - The minimum unit of scaling
 - Pods are mortal
 	</div>
@@ -320,8 +346,7 @@ Note:
 
 ### Major components - Services
 
-- Provide a reliable networking endpoint for a set of Pods
-- Provide stable DNS, IP addresses, and support TCP and UDP
+- Provide a reliable networking endpoint for a set of Pods : stable DNS and IP addresses
 - Perform simple randomized load-balancing across Pods
 - Automatically updates itself when Pods come and go
 
@@ -338,9 +363,13 @@ Note:
 <div>
 ![Service](2018/hassle-free-kubernetes-on-openstack/img/Service.png)
 </div>
-
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
+
+Note:
+- Pods IP are unreliable
+- A Service gets its own **stable** IP address, DNS name, and port
+- It **dynamically** gets associated with a set of Pod using *labels*
 
 +++
 
@@ -348,10 +377,13 @@ Note:
 
 
 ![Service2](2018/hassle-free-kubernetes-on-openstack/img/Service2.png)
-
-
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="fade" -->
+
+Note:
+- Pods IP are unreliable
+- A Service gets its own **stable** IP address, DNS name, and port
+- It **dynamically** gets associated with a set of Pod using *labels*
 
 ---
 
@@ -360,18 +392,18 @@ Note:
 - Come on top of ReplicaSets, manage their lifecycle
 - Add rolling updates and simple rollbacks
 
+Note:
+- Update Manifest file to a launch Rolling Update
+- One single command
+
 ---
 
 ### Rolling Updates
 <div class="columns">
 	<div>
-![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
+![RollingUpdate0](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate0.png)
 	</div>
 	<div style='width: 65%'>
-- One single command to perform a Rolling Update
-- One single command to perform a Rollback
-- Minimum number of *Pods* available
-- Amount of time to wait between to iteration
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -381,6 +413,49 @@ Note:
 - *Deployment* creates a new *ReplicaSet* for the next revision
 - *Pods* are deleted one by one on the old *ReplicaSet*
 - New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
+
++++
+
+### Rolling Updates
+<div class="columns">
+	<div>
+![RollingUpdate0b](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate0b.png)
+	</div>
+	<div style='width: 65%'>
+- Creation of a new *ReplicaSet* for the next revision
+	</div>
+</div>
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
+Note:
+- *Deployment* creates a new *ReplicaSet* for the next revision
+- *Pods* are deleted one by one on the old *ReplicaSet*
+- New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
+
++++
+
+### Rolling Updates
+<div class="columns">
+	<div>
+![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
+	</div>
+	<div style='width: 65%'>
+- Creation of a new *ReplicaSet* for the next revision
+- *Pods* with <span style="color:red">Revision A</span> are deleted
+- New *Pods* with <span style="color:green">Revision B</span> are created
+	</div>
+</div>
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
+Note:
+- *Deployment* creates a new *ReplicaSet* for the next revision
+- *Pods* are deleted one by one on the old *ReplicaSet*
+- New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
 
 +++
 
@@ -390,10 +465,10 @@ Note:
 ![RollingUpdate2](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate2.png)
 	</div>
 	<div style='width: 65%'>
-- One single command to perform a Rolling Update
-- One single command to perform a Rollback
-- Minimum number of *Pods* available
-- Amount of time to wait between to iteration
+- Creation of a new *ReplicaSet* for the next revision
+- *Pods* with <span style="color:red">Revision A</span> are deleted
+- New *Pods* with <span style="color:green">Revision B</span> are created
+- No downtime
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -403,6 +478,7 @@ Note:
 - *Deployment* creates a new *ReplicaSet* for the next revision
 - *Pods* are deleted one by one on the old *ReplicaSet*
 - New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
 
 +++
 
@@ -412,10 +488,11 @@ Note:
 ![RollingUpdate3](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate3.png)
 	</div>
 	<div style='width: 65%'>
-- One single command to perform a Rolling Update
-- One single command to perform a Rollback
-- Minimum number of *Pods* available
-- Amount of time to wait between to iteration
+- Creation of a new *ReplicaSet* for the next revision
+- *Pods* with <span style="color:red">Revision A</span> are deleted
+- New *Pods* with <span style="color:green">Revision B</span> are created
+- No downtime
+- Fast Rollbacks
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -425,6 +502,7 @@ Note:
 - *Deployment* creates a new *ReplicaSet* for the next revision
 - *Pods* are deleted one by one on the old *ReplicaSet*
 - New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
 
 ---
 
@@ -448,6 +526,7 @@ Note:
 - start test environments within seconds
 - fast rollbacks
 - takes care of availability
+- But : complexity of deployment
 
 ---
 
@@ -484,6 +563,7 @@ Note:
 
 - The Kubernetes Book by Nigel Poulton
 - PWK : https://labs.play-with-k8s.com/
+- https://kubernetes.io/
 
 ---
 
