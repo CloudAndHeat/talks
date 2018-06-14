@@ -465,8 +465,8 @@ Note:
 	</div>
 	<div style='width: 65%'>
 - Creation of a new *ReplicaSet* for the next revision
-- *Pods* with Rev. A are deleted
-- New *Pods* with Rev. B are created
+- *Pods* with <span style="color:red">Revision A</span> are deleted
+- New *Pods* with <span style="color:green">Revision B</span> are created
 - No downtime
 	</div>
 </div>
