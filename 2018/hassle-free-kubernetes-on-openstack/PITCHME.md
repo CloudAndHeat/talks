@@ -392,6 +392,9 @@ Note:
 - Come on top of ReplicaSets, manage their lifecycle
 - Add rolling updates and simple rollbacks
 
+Note:
+- Update Manifest file to a launch Rolling Update
+
 ---
 
 ### Rolling Updates
@@ -400,10 +403,11 @@ Note:
 ![RollingUpdate1](2018/hassle-free-kubernetes-on-openstack/img/RollingUpdate1.png)
 	</div>
 	<div style='width: 65%'>
-- One single command to perform a Rolling Update
-- One single command to perform a Rollback
-- Minimum number of *Pods* available
-- Amount of time to wait between two iteration
+- Creation of a new *ReplicaSet* for the next revision
+- *Pods* with Rev. A are deleted
+- New *Pods* with Rev. B are created
+- No downtime
+- Fast Rollbacks
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
