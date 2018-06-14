@@ -562,6 +562,7 @@ Note:
 
 - The Kubernetes Book by Nigel Poulton
 - PWK : https://labs.play-with-k8s.com/
+- https://kubernetes.io/
 
 ---
 
