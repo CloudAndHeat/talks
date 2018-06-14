@@ -235,6 +235,32 @@ Note:
 - The atomic unit of deployment
 - A fenced environment in which is run a container
 - The minimum unit of scaling
+	</div>
+	<div>
+![Scaling](2018/hassle-free-kubernetes-on-openstack/img/Scaling.png)
+	</div>
+</div>
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="fade" -->
+
+Note:
+
+- Atomic unit of deployment in VMware / KVM / Hyper-V : VM
+- Atomic unit of deployment in Docker : Container
+- You don't run a container directly on a k8s cluster, you need to run it inside a Pod.
+- A Pod is a shared execution environment for one or more containers : they share a hostname, IP address, memory address space, sockets, volumes, ...
+- You do not scale by adding more of the same container to an existing Pod, but by adding more copy of your Pod.
+- Pods are cattle. If they die unexpectedly, we don't bother trying to bring them back to life. We just start a fresh new Pod (new ID, new IP address)
+
++++
+
+### Major components - Pods
+
+<div class="columns">
+	<div>
+- The atomic unit of deployment
+- A fenced environment in which is run a container
+- The minimum unit of scaling
 - Pods are mortal
 	</div>
 	<div>
@@ -464,8 +490,6 @@ Note:
 - Openstack, an Open Source software for building Public and Private Clouds
 - A collection of services for Compute, Network, Storage resources, and more
 - Openstack Magnum for the automated deployment of k8s clusters
-
-<img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png" style="height: 50%; width: 50%;">
 
 Note:
 - What is Openstack ? Cloud platform / sofware
