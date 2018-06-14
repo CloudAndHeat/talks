@@ -371,7 +371,7 @@ Note:
 - One single command to perform a Rolling Update
 - One single command to perform a Rollback
 - Minimum number of *Pods* available
-- Amount of time to wait between to iteration
+- Amount of time to wait between two iteration
 	</div>
 </div>
 <!-- .slide: data-background-transition="none" -->
@@ -381,6 +381,7 @@ Note:
 - *Deployment* creates a new *ReplicaSet* for the next revision
 - *Pods* are deleted one by one on the old *ReplicaSet*
 - New *Pods* with the new version of the application are created on the new *ReplicaSet*
+- No Downtime
 
 +++
 
@@ -457,6 +458,8 @@ Note:
 - Openstack, an Open Source software for building Public and Private Clouds
 - A collection of services for Compute, Network, Storage resources, and more
 - Openstack Magnum for the automated deployment of k8s clusters
+
+<img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png" style="height: 50%; width: 50%;">
 
 Note:
 - What is Openstack ? Cloud platform / sofware
